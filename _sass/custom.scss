@@ -1,0 +1,59 @@
+#header {
+	h3 {
+		padding: 0;
+		font-weight: 400;
+		color: lighten($text-color, 40%);
+	}
+	h1 {
+		color: $main-color;
+	}
+	span {
+		font-weight: 700; 
+	}
+	&:after {
+		height: 24px;
+		margin: 24px auto;
+		background: url(/img/arrow.svg) center no-repeat;
+	}
+}
+
+#nav-list {
+	span {
+		display: block;
+		margin-bottom: 24px;
+	}
+}
+
+.social {
+	display: inline;
+	padding: 1em 1.2em;
+	background-repeat: no-repeat;
+	background-position: center;
+	&:hover {
+		background-color: transparent;
+		opacity:0.8;
+	}
+	&.plus {
+		background-image: url(/img/plus-icon.svg);
+	}
+	&.github {
+		background-image: url(/img/hub-icon.svg);
+	}
+	&.twitter {
+		background-image: url(/img/twitter-icon.svg);
+	}
+}
+
+#theme {
+	display: inline;
+	font-size: 1em;
+	&:hover {
+		background-color: lighten($main-color, 0%);
+		color: $background-color;
+		text-decoration: underline;
+	}
+}
+
+img[title="Engeene"], img[title="GDG Milano"], img[title="Emerald"] {
+  box-shadow: 0 2px 6px #ddd;
+}

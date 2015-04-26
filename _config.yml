@@ -1,0 +1,25 @@
+# Site settings
+title: Jacopo Rabolini | Web Designer
+description: "Mi occupo di web disign, grafica, web writing e sviluppo web."
+url: "http://www.jacoporabolini.com"
+author:
+  name: "Jacopo Rabolini"
+  url: "http://www.jacoporabolini.com"
+
+# Build settings
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
