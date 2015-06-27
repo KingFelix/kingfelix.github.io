@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Portfolio
+layout: page
+title: Alcune cose che ho fatto
 ---
 ## Engeene
 Sito verticale, focalizzato su notizie, articoli ed approfondimenti relativi al mondo delle tecnologie informatiche. 

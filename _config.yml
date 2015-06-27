@@ -4,6 +4,7 @@ description: "Mi occupo di web disign, grafica, web writing e sviluppo web."
 url: "http://www.jacoporabolini.com"
 author:
   name: "Jacopo Rabolini"
+  email: "hello@jacoporabolini.com"
   url: "http://www.jacoporabolini.com"
 
 # Build settings
@@ -23,3 +24,17 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: true
+custom_nav_footer: true
+reverse: false

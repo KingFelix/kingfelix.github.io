@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Due parole su di me
 ---
 ## Chi sono
