@@ -36,7 +36,7 @@ Workshop sul responsive design.
 
 ![Wired Next Fest 2015](/img/wnf15.jpg "WNF15")
 
-In occasione dell'edizione 2015 della Wired Next Fest, ho tenuto un workshop di una giornata sul responsive design. Il workshop si è svolto in due momenti distinti con una prima parte nel quale ho tenuto un talk, ed una seconda parte di codelab, in cui gli intervenuti dovevano utilizzare quanto appreso per modificare un sito statico d'esempio, nella corrispettiva responsive, linkata di seguito assieme alla presentazione su **Speaker Deck**.
+In occasione dell'edizione 2015 della Wired Next Fest, ho tenuto un [workshop di una giornata sul responsive design](http://nextfest2015.wired.it/events/web-cross-device-costruire-siti-web-responsive/). Il workshop si è svolto in due momenti distinti con una prima parte nel quale ho tenuto un talk, ed una seconda parte di codelab, in cui gli intervenuti dovevano utilizzare quanto appreso per modificare un sito statico d'esempio, nella corrispettiva responsive, linkata di seguito assieme alla presentazione su **Speaker Deck**.
 
 **La presentazione:** [Web Cross Device](https://speakerdeck.com/kingfelix/web-cross-device)
 
