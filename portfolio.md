@@ -30,3 +30,14 @@ Blog minimale creato per **Jekyll**, il cui scopo principale è quello di fornir
 Emerald è stato realizzato in HTML, CSS e Javascript, senza l'ausilio di nessuna libreria esterna. Il sito su cui vi trovate ora si basa proprio su Emerald, progetto che potete [trovare su Github](https://github.com/KingFelix/emerald) e che può essere liberamente scaricato ed utilizzato.
 
 **Link:** [www.jacoporabolini.com/emerald](http://www.jacoporabolini.com/emerald)
+
+## Wired Next Fest 2015
+Workshop sul responsive design.
+
+![Wired Next Fest 2015](/img/wnf15.jpg "WNF15")
+
+In occasione dell'edizione 2015 della Wired Next Fest, ho tenuto un workshop di una giornata sul responsive design. Il workshop si è svolto in due momenti distinti con una prima parte nel quale ho tenuto un talk, ed una seconda parte di codelab, in cui gli intervenuti dovevano utilizzare quanto appreso per modificare un sito statico d'esempio, nella corrispettiva responsive, linkata di seguito assieme alla presentazione su **Speaker Deck**.
+
+**La presentazione:** [Web Cross Device](https://speakerdeck.com/kingfelix/web-cross-device)
+
+**Link:** [www.jacoporabolini.com/wnf-demo/](http://www.jacoporabolini.com/wnf-demo/)
