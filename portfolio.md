@@ -9,7 +9,7 @@ Sito verticale, focalizzato su notizie, articoli ed approfondimenti relativi al 
 
 Nato nel 2011 con il nome di **Googlab**, inizialmente si concentrava su notizie e articoli inerenti il mondo delle tecnologie Google, per poi espandere le proprie tematiche verso tutto il settore. Oltre alla scrittura di [molti articoli](http://www.engeene.it/author/jacopo-rabolini/), per questo progetto mi sono occupato di tutta la parte tecnica e grafica, partendo dall'installazione di **Wordpress**, su cui è basato il sito, fino alla realizzazione delle funzionalità di cui avevamo bisogno, di tutto l'HTML e delle varie parti grafiche.
 
-**Link:** [www.engeene.it](http://www.engeene.it)
+> **Link:** [www.engeene.it](http://www.engeene.it)
 
 ## GDG Milano
 Nuovo sito ufficiale del Google Developer Group di Milano, una delle principali community di sviluppatori presenti sul territorio. 
@@ -20,7 +20,7 @@ Oltre ad essere uno dei manager del GDG Milano, mi sono occupato della realizzaz
 
 Il sito è stato realizzato utilizzando [Jekyll](http://jekyllrb.com), uno **static site generator** del quale ho parlato anche su [Medium](https://medium.com/@jacoporabolini/introduzione-a-jekyll-1c47612b9c85). Oltre all'ideazione del sito e alla sua realizzazione in HTML, CSS, jQuery e Bootstrap, ne curo anche l'aggiornamento e la manutenzione.
 
-**Link:** [www.gdgmilano.org](http://www.gdgmilano.org)
+> **Link:** [www.gdgmilano.org](http://www.gdgmilano.org)
 
 ## Emerald <a class="github-button" href="https://github.com/KingFelix/Emerald" data-icon="octicon-star" data-count-href="/KingFelix/Emerald/stargazers" data-count-api="/repos/KingFelix/Emerald#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star KingFelix/Emerald on GitHub">Star</a>
 Blog minimale creato per **Jekyll**, il cui scopo principale è quello di fornire un tema semplice e pronto all'uso.
@@ -29,15 +29,13 @@ Blog minimale creato per **Jekyll**, il cui scopo principale è quello di fornir
 
 Emerald è stato realizzato in HTML, CSS e Javascript, senza l'ausilio di nessuna libreria esterna. Il sito su cui vi trovate ora si basa proprio su Emerald, progetto che potete [trovare su Github](https://github.com/KingFelix/emerald) e che può essere liberamente scaricato ed utilizzato.
 
-**Link:** [www.jacoporabolini.com/emerald](http://www.jacoporabolini.com/emerald)
+> **Link:** [www.jacoporabolini.com/emerald](http://www.jacoporabolini.com/emerald)
 
 ## Wired Next Fest 2015
 Workshop sul responsive design.
 
 ![Wired Next Fest 2015](/img/wnf15.jpg "WNF15")
 
-In occasione dell'edizione 2015 della Wired Next Fest, ho tenuto un [workshop di una giornata sul responsive design](http://nextfest2015.wired.it/events/web-cross-device-costruire-siti-web-responsive/). Il workshop si è svolto in due momenti distinti con una prima parte nel quale ho tenuto un talk, ed una seconda parte di codelab, in cui gli intervenuti dovevano utilizzare quanto appreso per modificare un sito statico d'esempio, nella corrispettiva responsive, linkata di seguito assieme alla presentazione su **Speaker Deck**.
+In occasione dell'edizione 2015 della Wired Next Fest, ho tenuto un [workshop di una giornata sul responsive design](http://nextfest2015.wired.it/events/web-cross-device-costruire-siti-web-responsive/). Il workshop si è svolto in due momenti distinti con una prima parte nel quale ho tenuto un talk dal titolo [Web Cross Device](https://speakerdeck.com/kingfelix/web-cross-device), ed una seconda parte di codelab, in cui gli intervenuti dovevano utilizzare quanto appreso per modificare un sito statico d'esempio, nella corrispettiva responsive, raggiungibile dal link qui di seguito.
 
-**La presentazione:** [Web Cross Device](https://speakerdeck.com/kingfelix/web-cross-device)
-
-**Link:** [www.jacoporabolini.com/wnf-demo/](http://www.jacoporabolini.com/wnf-demo/)
+> **Link:** [www.jacoporabolini.com/wnf-demo/](http://www.jacoporabolini.com/wnf-demo/)
