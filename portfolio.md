@@ -22,7 +22,7 @@ Il sito è stato realizzato utilizzando [Jekyll](http://jekyllrb.com), uno **sta
 
 **Link:** [www.gdgmilano.org](http://www.gdgmilano.org)
 
-## Emerald
+## Emerald <a class="github-button" href="https://github.com/KingFelix/Emerald" data-icon="octicon-star" data-count-href="/KingFelix/Emerald/stargazers" data-count-api="/repos/KingFelix/Emerald#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star KingFelix/Emerald on GitHub">Star</a>
 Blog minimale creato per **Jekyll**, il cui scopo principale è quello di fornire un tema semplice e pronto all'uso.
 
 ![Emerald](/img/emerald.png "Emerald")
