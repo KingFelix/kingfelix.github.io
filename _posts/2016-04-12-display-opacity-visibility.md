@@ -38,7 +38,7 @@ Al contrario di ``opacity`` però, l'elemento è completamente invisibile, ed ev
 
 Per quanto riguarda animazioni e transizioni ``visibility`` si comporta in maniera un po' particolare. La proprietà è disponibile per le animazioni, ma non per le transizioni, accettando come valori ``visibility:hidden`` o ``visibility:visible`` senza possibilità di valori intermedi utili ad una transizione. Impostando quindi un tempo di transizione tra una stato e l'altro, l'elemento semplicemente scomparirà di colpo al termine del tempo impostato.
 
-NB: la proprietà accetta anche un terzo valore, ``visibility:collapse``, che si comporta più o meno come ``display:hidden``, ma solo per gli elementi di una tabella. Su tutti gli altri elementi questo valore si comporta come ``visibility:hidden``.
+NB: la proprietà accetta anche un terzo valore, ``visibility:collapse``, che si comporta più o meno come ``display:none``, ma solo per gli elementi di una tabella. Su tutti gli altri elementi questo valore si comporta come ``visibility:hidden``.
 
 ### Demo
 Di seguito potete vedere una semplice demo sul comportamento delle tre proprità. Cliccando sui pulsanti verrà applicata la proprietà del caso per nascondere l'elemento ``div``, all'interno del quale si trova un link che, come discusso sopra, per ``opacity`` rimane raggiungibile anche con l'elemento completamente trasparente.  
