@@ -64,11 +64,8 @@ img[title="Engeene"], img[title="GDG Milano"], img[title="Emerald"] {
 }
 
 table {
-	border: 1px solid #666;
     background-color: #f3f3f3;
-    padding: 1rem;
     border-collapse: collapse;
-    width: 100%;
     margin-bottom: 24px;
 }
 
@@ -78,7 +75,10 @@ thead {
 
 th, td {
     border: 1px solid #666;
-    padding: .5rem;
+    padding: .35rem;
+    @media (min-width: 940px) {
+    	padding: .5rem;
+    }
     text-align: center;
 }
 
