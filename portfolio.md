@@ -39,3 +39,12 @@ Workshop sul responsive design.
 In occasione dell'edizione 2015 della Wired Next Fest, ho tenuto un [workshop di una giornata sul responsive design](http://nextfest2015.wired.it/events/web-cross-device-costruire-siti-web-responsive/). Il workshop si è svolto in due momenti distinti con una prima parte nel quale ho tenuto un talk dal titolo [Web Cross Device](https://speakerdeck.com/kingfelix/web-cross-device), ed una seconda parte di codelab, in cui gli intervenuti dovevano utilizzare quanto appreso per modificare un sito statico d'esempio, nella corrispettiva responsive, raggiungibile dal link qui di seguito.
 
 > **Link:** [www.jacoporabolini.com/wnf-demo/](http://www.jacoporabolini.com/wnf-demo/)
+
+## Blu
+Preview del prossimo progetto basato su Jekyll.
+
+![Blu](/img/blu.png "Blu")
+
+**Blu** prende una strada leggermente diversa da **Emerald** e introduce un uso più ampio delle immagini, l'uso di categorie per i post e il classico meno orizzontale a scomparsa. Anche in questo caso non sto facendo uso di librerie esterne per lo sviluppo e il tutto sarà poi rilasciato **open source**.
+
+> **Link:** [www.jacoporabolini.com/blu/](http://www.jacoporabolini.com/blu/)
