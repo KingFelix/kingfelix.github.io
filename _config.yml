@@ -8,14 +8,15 @@ author:
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: ""
 markdown: kramdown
 
 source: .
 destination: ./_site
-permalink: /:title
+permalink: /:title/
 paginate: 8
 paginate_path: /page:num/
+exclude: [node_modules, gulpfile.js, package.json]
 
 # Default values
 defaults:
