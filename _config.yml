@@ -42,5 +42,5 @@ custom_nav_footer: true
 reverse: false
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
