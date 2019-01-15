@@ -1,6 +1,10 @@
 ---
 title: Vi presento Emerald
 ---
+<div class=”postmetadata”>
+  Posted on <span class=”updated”>Mar 01, 2015</span> 
+</div>
+
 Il sito che vi trovate di fronte è realizzato mediante l'uso di [Jekyll](http://jekyllrb.com), uno **static site generator** di cui parleremo ancora su queste pagine. In particolare però, si basa su un piccolo progetto che ho realizzato proprio per Jekyll. 
 
 Dato che Jekyll è fondamentalmente realizzato in Ruby, mi è sembrato carino assegnare a questo primo progetto il nome di un'altra gemma preziosa e la scelta è ricaduta su **Emerald**.
