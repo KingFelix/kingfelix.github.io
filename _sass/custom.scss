@@ -64,7 +64,7 @@
 	font-weight: 200;
 	&:hover {
 		background-color: lighten($main-color, 0%);
-		color: $background-color;
+		
 		text-decoration: underline;
 	}
 }
