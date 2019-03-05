@@ -17,7 +17,7 @@
     }
   }
   span {
-      font-weight: 200;
+      font-weight: 300;
       color: $text-color;
     }
 }
@@ -176,7 +176,7 @@
   color: lighten($text-color, 25%);
   line-height: 1.5em; /* 24px/16px */
   margin-bottom: 1.5em; /* 24px/16px */
-  font-weight: 200;
+  font-weight: 300;
   @media (min-width: 940px) {
     display: block;
     color: lighten($text-color, 25%);
