@@ -84,11 +84,11 @@ table {
 }
 
 thead {
-	background-color: #FF201D;
+	background-color: $main-color;
 }
 
 th, td {
-    border: 1px solid #666;
+    border: 1px solid #F1F1F1;
     padding: .35rem;
     @media (min-width: 940px) {
     	padding: .5rem;
@@ -102,8 +102,9 @@ td:first-child {
 }
 
 .highlighter-rouge {
-	background-color: bisque;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+	background-color: $main-color;
+	// border: 1px solid #ccc;
+	// border-radius: 4px;
+	color: $text-color;
     padding: 0 4px;
 }
