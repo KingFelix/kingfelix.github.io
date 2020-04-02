@@ -1,17 +1,106 @@
----
-layout: default
----
-<!-- Posts -->
-<ul id="posts">
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>Jacopo Rabolini | UX/UI Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
 
-	{% for post in paginator.posts %}
+  <!-- Navigation -->
+  <header class="header">
+    <!-- <div class="header-linear"> -->
+      <div id="header-wrap" class="header-wrap">
 
-	  <li class="post">
-	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
-	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
-	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
-	  </li>
+        <nav id="menu" class="menu">
+          <ul>
+            <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+            <li class="menu-item"><a class="menu-link" href="#about">About</a></li>
+            <li class="menu-item"><a class="menu-link" href="#work">Work</a></li>
+          </ul>
+        </nav>
 
-    {% endfor %}
+        <!-- Menu icon -->
+        <a href="#" id="icon" class="icon">
+          <div id="bar"></div>
+        </a>
 
-</ul>
+      </div>
+  <!-- </div> -->
+</header>
+
+      <!-- Section 1 -->
+      <section class="section section-one">
+        <div class="section-one-text">
+          <h1>Ciao! Mi chiamo Jacopo.<br> Da oltre 10 anni creo interfacce e prodotti digitali<span class="dot">.</span></h1>
+        </div>
+        <div class="section-one-img">
+          <img class="img" src="vector.svg" alt="pen tool">
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="about" class="section section-two">
+        <div class="section-two-content">
+          <h2 class="section-two-title">About me<span class="dot">.</span></h2>
+          <p>Sono un Designer e mi occupo tutti i giorni di <span class="under">UX e UI Design</span>. I miei tool quotidiani comprendono Sketch, l'immancabile carta e penna, oltre ad una generosa riserva di post-it, con il quale realizzo sketch, story mapping, user flows e interfacce web e mobile.</p>
+          <p>Ogni tanto mi piace anche scrivere codice e le mie skill includono principalmente il mondo del Front-End Design, quindi <span class="under">HTML, CSS e Javascript</span>, quest'ultimo orientato alla presentazione dell'interfaccia, più che alla logica applicativa.</p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="work" class="section section-three">
+        <div class="section-three-text">
+          <h2 class="section-three-title">Design<span class="dot">.</span></h2>
+          <p class="text">Mi piace sperimentare, provare nuovi strumenti e cerco sempre di esplorare stili diversi. Sul mio account Dribbble raccolgo i risultati dei miei esperimenti ed è un buon punto per iniziare a farsi un'idea di quello che faccio.</p>
+          <a href="https://dribbble.com/jacoporabolini" class="button">Go To Dribbble</a>
+        </div>
+        <div class="section-four-img">
+          <img src="img/ui.png" alt="ui design" class="four-img img-left animate-img">
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section section-four">
+        <div class="section-four-text">
+          <h2 class="section-three-title">Project: Graphite<span class="dot">.</span></h2>
+          <p class="text">Si tratta di una piccola libreria open source per Sketch, che si pone lo scopo di fornire un aiuto per lo studio degll'IA e degli User Flows. La potete trovare sul mio <a class="link" href="https://github.com/KingFelix">account Github</a>. Commenti e contributi sono ben accetti!</p>
+          <a href="https://github.com/KingFelix/Graphite" class="button">Go To Graphite</a>
+        </div>
+        <div class="section-four-img">
+          <img class="four-img img-left animate-img" src="img/Graphite.png" alt="agenda">
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section section-five">
+        <div class="section-five-text">
+          <h2 class="section-three-title">Project: Charcoal<span class="dot">.</span></h2>
+          <p class="text">Un altro progetto open source e un'altra libreria Sketch. Charcoal è composta da alcuni elementi già pronti, come stili di testo, modali e altri componenti, utili per realizzare velocemente wireframe e testare ipotesi di flussi.</p>
+          <a href="https://github.com/KingFelix/Charcoal" class="button">Go To Github</a>
+        </div>
+        <div class="section-five-img">
+          <img class="four-img img-left animate-img" src="img/Charcoal.png" alt="agenda">
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <span class="label">Contact me at</span>
+        <a class="footer-contact" href="mailto:hello@jacoporabolini.com">hello@jacoporabolini.com</a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/jacopo-rabolini/" class="footer-icon linkedin"></a>
+          <a href="https://dribbble.com/JacopoRabolini" class="footer-icon dribbble"></a>
+          <a href="https://www.behance.net/jacoporabolini" class="footer-icon behance"></a>
+          <a href="https://github.com/KingFelix" class="footer-icon github"></a>
+        </div>
+        <p class="copy">@2020 by Jacopo Rabolini</p>
+      </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
