@@ -1,0 +1,627 @@
+$primary: #F6C750; //personal brand yellow
+$dark: #383838;
+$grey: #989898;
+$light: #FFF;
+$background: $light;
+$grey-dark: darken($grey, 40%);
+$shadow: rgba(56, 56, 56, 0.1);
+$breakpoint-xs: 374px;
+$breakpoint-s: 375px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: $background;
+  color: $dark;
+  font: 300 16px/1.5 'Montserrat', sans-serif;
+  @media screen and (min-width: $breakpoint-m) {
+    font-size: 18px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+}
+
+body {
+  background-color: $background;
+  @media screen and (min-width: $breakpoint-l) {
+    // large screen here
+  }
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  @media screen and (min-width: $breakpoint-m) {
+    font-size: 2.4rem;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+  @media screen and (min-width: $breakpoint-m) {
+    font-size: 2.2rem;
+  }
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+::selection {
+  background-color: $primary;
+}
+
+.link, .link:visited {
+  color: $primary;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.dot {
+  color: $primary;
+}
+
+// -- Navigation --//
+
+.header-wrap { // --> Flex Container
+  background-color: $background;
+  box-shadow: none;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  transition: all .4s;
+  width: 100vw;
+  z-index: 70;
+  @media screen and (min-width: $breakpoint-m) {
+    height: 84px;
+  }
+}
+
+  .shadow {
+    @media screen and (min-width: $breakpoint-m) {
+      box-shadow: 0 1px 0 $shadow;
+    }
+  }
+
+  .un-fixed {
+    @media screen and (min-width: $breakpoint-m) {
+      box-shadow: none;
+      position: fixed;
+      top: -100px;
+    }
+  }
+
+  .transparent {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  // -- Navigation -- //
+  .menu { // --> Flex Item of header-wrap container
+    flex: 1;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: all .4s;
+      @media (min-width: $breakpoint-m) {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+      }
+
+    ul { // --> Nested Flex Container
+      display: flex;
+      opacity: 0;
+      transition: all .4s;
+      visibility: hidden;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 0;
+      @media (min-width: $breakpoint-m) {
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+      }
+    }
+  }
+
+    .menu-item { // --> Nested Flex Items of nav ul
+      line-height: 3rem;
+      margin: 10px 20px;
+
+      .menu-link {
+        font-weight: 500;
+        font-size: 18px;
+        color: $dark;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .menu-link:after {
+          background: transparent;
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          height: 0.3rem;
+          margin: auto;
+          transition: all .4s;
+          width: 0px;
+      }
+
+      .menu-link:hover:after {
+        background: $primary;
+        width: 100%;
+      }
+    }
+
+.icon {
+      visibility: visible;
+      opacity: 1;
+      @media (min-width: $breakpoint-m) {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+.open {
+  background-color: $primary;
+  visibility: visible;
+  opacity: 1;
+  height: 100vh;
+  transition: all .4s;
+  & > ul {
+    height: 100vh;
+    transition: all .4s;
+    opacity: 1;
+    visibility: visible;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  & .menu-link {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all .4s;
+  }
+}
+
+// .open > ul {
+//   height: 100vh;
+//   transition: all .6s;
+//   flex-direction: column;
+//   opacity: 1;
+//   visibility: visible;
+//   align-items: center;
+//   justify-content: space-evenly;
+// }
+// -- Menu icon --//
+#icon {
+  display: block;
+  position: absolute;
+  top: 32px;
+  right: 28px;
+  height: 20px;
+  width: 24px;
+}
+
+#bar {
+  height: 2px;
+  width: 20px;
+  background-color: $dark;
+  margin-top: 6px;
+  &:after, &:before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 2px;
+    background-color: $dark;
+    transition: all 0.3s ease-out;
+  }
+  &:before {
+    margin-left: -4px;
+    top: -6px;
+    width: 24px;
+  }
+  &:after {
+    margin-left: 4px;
+    top: 4px;
+    width: 16px;
+  }
+  &.active {
+    background: none;
+  }
+  &.active:before {
+    margin: 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  &.active:after {
+    margin: 0;
+    top: -2px;
+    width: 24px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+// -- End Navigation
+
+.section {
+  align-items: center;
+  background-color: $background;
+  display: flex;
+  flex-direction: column-reverse;
+  height: auto;
+  justify-content: center;
+  padding: 64px 32px 0 32px;
+  position: relative;
+  @media screen and (min-width: $breakpoint-l) {
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0 32px;
+    padding: 0 calc((100vw - 1024px)/2);
+    scroll-snap-align: start;
+  }
+}
+
+.section-one {
+  padding-top: 96px;
+  @media screen and (min-width: $breakpoint-m) {
+    padding: 0 calc((100vw - 1024px)/2);
+  }
+}
+
+.section-one, .section-two, .section-three, .section-four, .section-five {
+  &:after {
+    @media screen and (max-width: $breakpoint-xs) {
+      height: 0;
+    }
+    background-color: $primary;
+    content: "";
+    height: 40px;
+    margin-top: 48px;
+    order: -1;
+    width: 4px;
+    @media screen and (min-width: $breakpoint-l) {
+      animation-duration: 0.6s;
+      animation-name: changeheight;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      left: 50%;
+      margin: 0;
+      position: absolute;
+      top: calc(100vh - 80px);
+    }
+  }
+}
+
+@keyframes changeheight {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 80px;
+  }
+}
+
+.section-one-text {
+  text-align: center;
+  // max-width: 658px;
+  @media screen and (min-width: $breakpoint-l) {
+    text-align: left;
+    width: 75%;
+  }
+}
+
+.section-one-img {
+  margin-bottom: 24px;
+  @media screen and (min-width: $breakpoint-l) {
+    margin: 0;
+  }
+  @media screen and (min-width: $breakpoint-m) and (max-width: $breakpoint-l) {
+    margin-top: 74px;
+  }
+}
+
+.img {
+  width: 200px;
+  @media screen and (min-width: $breakpoint-m) {
+    width: 250px;
+  }
+  @media screen and (min-width: $breakpoint-l) {
+    width: auto;
+  }
+}
+
+.section-two-content {
+  column-count: 2;
+  column-width:378px;
+  column-gap: 48px;
+  margin:0 auto;
+  padding: 0 24px;
+  @media screen and (min-width: $breakpoint-m) {
+    padding: 0 75px;
+  }
+}
+
+%section-title {
+  margin-bottom: 16px;
+}
+
+.section-two-title {
+  @extend %section-title;
+  column-span: all;
+}
+
+.section-three-title {
+  @extend %section-title;
+}
+
+.under {
+    background-image: linear-gradient(to right, transparent 50%, $primary 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s linear 0.5s;
+  }
+
+.under-color {
+    background-position: -100% 0;
+}
+
+.section-three-text, .section-four-text, .section-five-text {
+  max-width: 467px;
+  @media screen and (min-width: $breakpoint-l) {
+    text-align: left;
+    width: 487px;
+  }
+}
+
+@mixin hover-button {
+  background-color: darken($primary, 8%);
+}
+
+.button {
+  background-color: $primary;
+  border: 2px solid $dark;
+  box-shadow: 4px 4px 0 $dark;
+  font-size: 16px;
+  font-weight: 500;
+  color: $dark;
+  display: inline-block;
+  padding: 12px 22px;
+  text-decoration: none;
+  &:hover {
+    @include hover-button;
+  }
+  &:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+  }
+  @media screen and (min-width: $breakpoint-m) {
+    font-size: 18px;
+  }
+}
+
+.section-three-img {
+  height: 100%;
+  margin-bottom: 64px;
+  padding: 0 32px;
+  position: relative;
+  @media screen and (min-width: $breakpoint-l) {
+    margin: 0;
+    width: 488px;
+  }
+}
+
+.section-three-img {
+  display: flex;
+  width: 100%;
+  @media screen and (min-width: $breakpoint-m) {
+    display: block;
+    width: auto;
+  }
+}
+
+.three-img {
+  height: 300px;
+  position: relative;
+  @media screen and (min-width: $breakpoint-m) {
+    height: 400px;
+    position: absolute;
+  }
+}
+
+.animate-img {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.position-reset {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.img-1 {
+  left: 0;
+  z-index: 1;
+  @media screen and (min-width: $breakpoint-m) {
+    right: 0;
+    top: 15%;
+  }
+}
+
+.img-2 {
+  top: 48px;
+  right: 25%;
+  z-index: 3;
+  @media screen and (min-width: $breakpoint-m) {
+    left: 35%;
+    top: 35%;
+  }
+}
+
+.img-3 {
+  top: 24px;
+  right: 50%;
+  z-index: 2;
+  @media screen and (min-width: $breakpoint-m) {
+    left: 10%;
+    top: 25%;
+    right: auto;
+  }
+}
+
+.section-four {
+  @media screen and (min-width: $breakpoint-l) {
+    flex-direction: row-reverse;
+  }
+}
+
+.section-four-img {
+  height: auto;
+  margin-bottom: 64px;
+  position: relative;
+  @media screen and (min-width: $breakpoint-l) {
+    margin: 0;
+    width: 488px;
+  }
+}
+
+.img-left {
+  width: 100%;
+  @media screen and (min-width: $breakpoint-m){
+    width: 426px;
+    padding: 0 24px;
+  }
+}
+
+.section-five {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50vh;
+}
+
+.section-five-img {
+  height: auto;
+  margin-bottom: 64px;
+  position: relative;
+  @media screen and (min-width: $breakpoint-l) {
+    margin: 0;
+    width: 488px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+  background: $primary;
+  padding: 0 32px;
+  position: fixed;
+  bottom: 0;
+  box-shadow: inset 0 8px 32px rgba($dark, 0.3);
+  z-index:-1;
+  @media screen and (min-width: $breakpoint-l) {
+    padding: 0 calc((100vw - 1024px)/2);
+  }
+}
+
+.label {
+  font: 300 16px/1.5 'Montserrat', sans-serif;
+  @media screen and (min-width: $breakpoint-m) {
+    font-size: 18px;
+  }
+}
+
+.footer-contact {
+  color: $dark;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  @media screen and (min-width: $breakpoint-m) {
+    font-size: 1.5rem;
+  }
+}
+
+.footer-social {
+  margin-top: 32px;
+  width: 216px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: $breakpoint-m) {
+    width: 256px;
+  }
+}
+
+.footer-icon {
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  color: $dark;
+  &:hover {
+    opacity: 90%;
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+  }
+  @media screen and (min-width: $breakpoint-m) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.label, .footer-contact, .footer-social, .copy {
+  @media screen and (min-width: $breakpoint-l) {
+    margin-left: 24px;
+  }
+}
+
+.linkedin {
+  background-image: url(/img/ink-icon.svg);
+}
+
+.dribbble {
+  background-image: url(/img/bbb-icon.svg);
+}
+
+.github {
+  background-image: url(/img/hub-icon.svg);
+}
+
+.behance {
+  background-image: url(/img/be-icon.svg);
+}
+
+.copy {
+  bottom: 0;
+  position: absolute;
+}
