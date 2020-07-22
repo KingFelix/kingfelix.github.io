@@ -1,4 +1,4 @@
-$primary: #F6C750; //personal brand yellow
+$primary: #F6C750;
 $dark: #383838;
 $grey: #989898;
 $light: #FFF;
@@ -19,6 +19,7 @@ html {
   background-color: $background;
   color: $dark;
   font: 300 16px/1.5 'Montserrat', sans-serif;
+  text-rendering: auto;
   @media screen and (min-width: $breakpoint-m) {
     font-size: 18px;
     overflow-y: scroll;
@@ -320,6 +321,7 @@ p {
   }
 }
 
+
 @keyframes changeheight {
   from {
     height: 0px;
@@ -331,7 +333,6 @@ p {
 
 .section-one-text {
   text-align: center;
-  // max-width: 658px;
   @media screen and (min-width: $breakpoint-l) {
     text-align: left;
     width: 75%;
