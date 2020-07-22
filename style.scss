@@ -547,7 +547,7 @@ p {
   padding: 0 32px;
   position: fixed;
   bottom: 0;
-  box-shadow: inset 0 8px 32px rgba($dark, 0.3);
+  box-shadow: inset 0 4px 0 $dark;
   z-index:-1;
   @media screen and (min-width: $breakpoint-l) {
     padding: 0 calc((100vw - 1024px)/2);
