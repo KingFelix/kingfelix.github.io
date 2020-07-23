@@ -184,25 +184,28 @@ p {
       }
     }
 
-.open {
-  background-color: $primary;
-  visibility: visible;
-  opacity: 1;
-  height: 100vh;
-  transition: all .4s;
-  & > ul {
+@media (max-width: $breakpoint-m) {
+
+  .open {
+    background-color: $primary;
+    visibility: visible;
+    opacity: 1;
     height: 100vh;
     transition: all .4s;
-    opacity: 1;
-    visibility: visible;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  & .menu-link {
-    font-size: 2rem;
-    font-weight: 600;
-    transition: all .4s;
+    & > ul {
+      height: 100vh;
+      transition: all .4s;
+      opacity: 1;
+      visibility: visible;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    & .menu-link {
+      font-size: 2rem;
+      font-weight: 600;
+      transition: all .4s;
+    }
   }
 }
 
